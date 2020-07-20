@@ -5,11 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfExample1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="270" Width="523">
-    <Canvas>
-        <Button Background="Yellow" Content="Top / Left" Canvas.Top="20" Canvas.Left="20" Canvas.ZIndex="10" />
-        <Button Background="Yellow" Content="Top / Right" Canvas.Top="20" Canvas.Right="20" />
-        <Button Background="Yellow" Content="Bottom / Left" Canvas.Bottom="20" Canvas.Left="20" />
-        <Button Background="Yellow" Content="Bott / Right" Canvas.Bottom="20" Canvas.Right="20" />
-    </Canvas>
+        Title="MainWindow" Height="275" Width="499">
+    <Grid>
+
+        <StackPanel Background="DeepSkyBlue">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="January" Background="LightBlue" Height="40" Width="90" />
+                <Button Content="February" Background="LightBlue" Height="40" Width="90" />
+                <Button Content="March" Background="LightBlue" Height="40" Width="90" />
+                <Button Content="April" Background="LightBlue" Height="40" Width="90" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Button Content="Button One" Background="Yellow" Margin="5" Width="80" Height="35"/>
+                <Button Content="Button Two" Background="Orange" Margin="5" Width="80" Height="35" />
+                <Button Content="Button Three" Background="Yellow" Margin="5" Width="80" Height="35" />
+                <Button Content="Button Four" Background="Orange" Margin="5" Width="80" Height="35" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
 </Window>
