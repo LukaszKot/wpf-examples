@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfExample1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="275" Width="499">
+        Title="MainWindow" Height="282" Width="460">
     <Grid>
 
         <StackPanel Background="DeepSkyBlue">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Content="January" Background="LightBlue" Height="40" Width="90" />
                 <Button Content="February" Background="LightBlue" Height="40" Width="90" />
                 <Button Content="March" Background="LightBlue" Height="40" Width="90" />
                 <Button Content="April" Background="LightBlue" Height="40" Width="90" />
-            </StackPanel>
+            </WrapPanel>
             <StackPanel Orientation="Vertical">
                 <Button Content="Button One" Background="Yellow" Margin="5" Width="80" Height="35"/>
                 <Button Content="Button Two" Background="Orange" Margin="5" Width="80" Height="35" />
