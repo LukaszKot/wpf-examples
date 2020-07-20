@@ -7,18 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="1*" />
-        </Grid.RowDefinitions>
-
-        <StackPanel Height="75" Background="Orange" Grid.Row="0">
-            <Button Visibility="Collapsed">Collapsed Button</Button>
-            <Button >This button is below collapsed button</Button>
-        </StackPanel>
-        <StackPanel Height="75" Background="Orange" Grid.Row="1">
-            <Button Visibility="Hidden">Hidden Button</Button>
-            <Button >This button is below hidden button</Button>
+        <StackPanel>
+            <Button HorizontalAlignment="Left" Background="Yellow" FontSize="22">Left</Button>
+            <Button HorizontalAlignment="Center" Background="Yellow" FontSize="22">Center</Button>
+            <Button HorizontalAlignment="Right" Background="Yellow" FontSize="22">Right</Button>
+            <Button HorizontalAlignment="Stretch" Background="Yellow" FontSize="22">Stretch</Button>
         </StackPanel>
     </Grid>
 </Window>
