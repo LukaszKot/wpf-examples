@@ -8,8 +8,19 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
-            <Button FlowDirection="LeftToRight" HorizontalContentAlignment="Left" Height="40" Background="Red" Foreground="White" FontSize="22">This is left to right</Button>
-            <Button FlowDirection="RightToLeft" HorizontalContentAlignment="Left" Height="40" Background="Red" Foreground="White" FontSize="22">This is right to left</Button>
+            <Button Height="25" Background="Yellow">
+                <Button.LayoutTransform>
+                    <RotateTransform Angle="0" />
+                </Button.LayoutTransform>
+                One
+            </Button>
+            <Button Height="25" Background="Yellow">
+                <Button.LayoutTransform>
+                    <RotateTransform Angle="15" />
+                </Button.LayoutTransform>
+                Two
+            </Button>
+            <Button Height="25" Background="Yellow">Three</Button>
         </StackPanel>
     </Grid>
 </Window>
