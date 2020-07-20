@@ -7,20 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="282" Width="460">
     <Grid>
-
-        <StackPanel Background="DeepSkyBlue">
-            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Content="January" Background="LightBlue" Height="40" Width="90" />
-                <Button Content="February" Background="LightBlue" Height="40" Width="90" />
-                <Button Content="March" Background="LightBlue" Height="40" Width="90" />
-                <Button Content="April" Background="LightBlue" Height="40" Width="90" />
-            </WrapPanel>
-            <StackPanel Orientation="Vertical">
-                <Button Content="Button One" Background="Yellow" Margin="5" Width="80" Height="35"/>
-                <Button Content="Button Two" Background="Orange" Margin="5" Width="80" Height="35" />
-                <Button Content="Button Three" Background="Yellow" Margin="5" Width="80" Height="35" />
-                <Button Content="Button Four" Background="Orange" Margin="5" Width="80" Height="35" />
-            </StackPanel>
-        </StackPanel>
+        <DockPanel Background="LightBlue">
+            <Button DockPanel.Dock="Left" FontSize="20" Content="Left" Background="Wheat" />
+            <Button DockPanel.Dock="Top" FontSize="20" Content="Top" Background="Yellow" />
+            <Button DockPanel.Dock="Right" FontSize="20" Content="Right" Background="Wheat" />
+            <Button DockPanel.Dock="Bottom" FontSize="20" Content="Bottom" Background="Yellow" />
+            <Button FontSize="20" Content="Fill" Background="Wheat" />
+        </DockPanel>
     </Grid>
 </Window>
