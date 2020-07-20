@@ -7,20 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel>
-            <Button Width="75" Background="Orange" >No scaling</Button>
-            <Button Width="75" Background="BurlyWood">
-                <Button.RenderTransform>
-                    <ScaleTransform ScaleX="2"/>
-                </Button.RenderTransform>
-                Scale 2
-            </Button>
-            <Button Width="75" Background="Orange" >
-                <Button.RenderTransform>
-                    <ScaleTransform ScaleX="1.5" ScaleY="3"/>
-                </Button.RenderTransform>
-                Scale 1.5/3
-            </Button>
-        </StackPanel>
+        <Button Content="Skew" Background="Orange" Width="110" Height="45" >
+            <Button.RenderTransform>
+                <SkewTransform AngleY="10" />
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Skew" Background="Orange" Width="110" Height="45" Margin="345,249,345,140" >
+            <Button.RenderTransform>
+                <SkewTransform AngleY="10" />
+            </Button.RenderTransform>
+        </Button>
     </Grid>
 </Window>
