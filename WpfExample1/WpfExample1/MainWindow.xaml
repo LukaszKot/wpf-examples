@@ -8,19 +8,19 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
-            <Button Height="25" Background="Yellow">
-                <Button.LayoutTransform>
-                    <RotateTransform Angle="0" />
-                </Button.LayoutTransform>
-                One
+            <Button Width="75" Background="Orange" >No scaling</Button>
+            <Button Width="75" Background="BurlyWood">
+                <Button.RenderTransform>
+                    <ScaleTransform ScaleX="2"/>
+                </Button.RenderTransform>
+                Scale 2
             </Button>
-            <Button Height="25" Background="Yellow">
-                <Button.LayoutTransform>
-                    <RotateTransform Angle="15" />
-                </Button.LayoutTransform>
-                Two
+            <Button Width="75" Background="Orange" >
+                <Button.RenderTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="3"/>
+                </Button.RenderTransform>
+                Scale 1.5/3
             </Button>
-            <Button Height="25" Background="Yellow">Three</Button>
         </StackPanel>
     </Grid>
 </Window>
