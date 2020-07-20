@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel>
-            <Button HorizontalAlignment="Left" Background="Yellow" FontSize="22">Left</Button>
-            <Button HorizontalAlignment="Center" Background="Yellow" FontSize="22">Center</Button>
-            <Button HorizontalAlignment="Right" Background="Yellow" FontSize="22">Right</Button>
-            <Button HorizontalAlignment="Stretch" Background="Yellow" FontSize="22">Stretch</Button>
-        </StackPanel>
+        <DockPanel>
+            <Button VerticalAlignment="Top" Background="Yellow" FontSize="22">Top</Button>
+            <Button VerticalAlignment="Center" Background="Yellow" FontSize="22">Center</Button>
+            <Button VerticalAlignment="Bottom" Background="Yellow" FontSize="22">Bottom</Button>
+            <Button VerticalAlignment="Stretch" Background="Yellow" FontSize="22">Stretch</Button>
+        </DockPanel>
     </Grid>
 </Window>
