@@ -5,17 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfExample1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Skew" Background="Orange" Width="110" Height="45" >
-            <Button.RenderTransform>
-                <SkewTransform AngleY="10" />
-            </Button.RenderTransform>
-        </Button>
-        <Button Content="Skew" Background="Orange" Width="110" Height="45" Margin="345,249,345,140" >
-            <Button.RenderTransform>
-                <SkewTransform AngleY="10" />
-            </Button.RenderTransform>
-        </Button>
-    </Grid>
+        Title="MainWindow" Height="270" Width="523">
+    <Canvas>
+        <Button Background="Yellow" Content="Top / Left" Canvas.Top="20" Canvas.Left="20" Canvas.ZIndex="10" />
+        <Button Background="Yellow" Content="Top / Right" Canvas.Top="20" Canvas.Right="20" />
+        <Button Background="Yellow" Content="Bottom / Left" Canvas.Bottom="20" Canvas.Left="20" />
+        <Button Background="Yellow" Content="Bott / Right" Canvas.Bottom="20" Canvas.Right="20" />
+    </Canvas>
 </Window>
