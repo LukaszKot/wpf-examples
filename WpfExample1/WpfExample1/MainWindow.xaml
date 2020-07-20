@@ -8,10 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
-            <Button HorizontalContentAlignment="Left" Background="Yellow" FontSize="22" Content="Left" />
-            <Button HorizontalContentAlignment="Center" Background="Yellow" FontSize="22" Content="Center" />
-            <Button HorizontalContentAlignment="Right" Background="Yellow" FontSize="22" Content="Right" />
-            <Button HorizontalContentAlignment="Stretch" Background="Yellow" FontSize="22" Content="Stretch" />
+            <Button FlowDirection="LeftToRight" HorizontalContentAlignment="Left" Height="40" Background="Red" Foreground="White" FontSize="22">This is left to right</Button>
+            <Button FlowDirection="RightToLeft" HorizontalContentAlignment="Left" Height="40" Background="Red" Foreground="White" FontSize="22">This is right to left</Button>
         </StackPanel>
     </Grid>
 </Window>
