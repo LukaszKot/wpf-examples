@@ -6,9 +6,19 @@
         xmlns:local="clr-namespace:WpfExample1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Canvas>
-        <Border BorderBrush="Black" BorderThickness="2">
-            <Label Margin="40" Padding="20" Background="DarkBlue" Foreground="White">Hello</Label>
-        </Border>
-    </Canvas>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Height="75" Background="Orange" Grid.Row="0">
+            <Button Visibility="Collapsed">Collapsed Button</Button>
+            <Button >This button is below collapsed button</Button>
+        </StackPanel>
+        <StackPanel Height="75" Background="Orange" Grid.Row="1">
+            <Button Visibility="Hidden">Hidden Button</Button>
+            <Button >This button is below hidden button</Button>
+        </StackPanel>
+    </Grid>
 </Window>
